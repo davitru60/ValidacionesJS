@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Datos Personales</title>
+    <link rel="stylesheet" href="styles2.css"> <!-- Puedes enlazar una hoja de estilos si lo deseas -->
+</head>
+<body>
+    <section id="main-content">
+        <h1>Formulario de Datos Personales</h1>
+        <form id="form-container" action="">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="apellido">Primer apellido:</label>
+            <input type="text" id="first-surname" name="first-surname"><br><br>
+
+            <label for="apellido">Segundo apellido:</label>
+            <input type="text" id="second-surname" name="second-surname"><br><br>
+
+            
+            <label for="dni">DNI:</label>
+            <input type="text" id="id" name="id"><br><br>
+            <!-- El atributo "pattern" establece una expresión regular para validar el formato del DNI. En este caso, se espera un DNI de 8 dígitos. -->
+
+            <label for="correo">Fecha de nacimiento:</label>
+            <input type="date" id="birth-date" name="birth-date"><br><br>
+
+            <input type="submit" id="submit-btn" value="Guardar">
+            <input type="button" id="clear-btn" value="Limpiar">
+        </form>
+    </section>
+
+    <script src="app2.js"></script>
+</body>
+</html>
