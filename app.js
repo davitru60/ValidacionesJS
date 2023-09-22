@@ -3,7 +3,9 @@ document.addEventListener("DOMContentLoaded", function () {
     const password = document.getElementById("password")
     const form = document.getElementById("form-container")
 
-    form.addEventListener("submit", function (e) {
+    form.addEventListener("submit", handleFormSubmit)
+
+    function handleFormSubmit(e){
         e.preventDefault();
         const inputEmail = email.value
         const inputPasswd = password.value
@@ -15,7 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
         } else {
             alert(validatedCredentials.errors.join("\n"))
         }
-    })
+    }
+       
 
     function emailFormat(email) {
         var isValid=true
@@ -54,7 +57,6 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function isEmptyPasswd(passwd){
-        console.log(passwd)
         return passwd.length==0
     }
 

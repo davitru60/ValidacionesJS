@@ -9,12 +9,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const birthDate = document.getElementById("birth-date")
     const id = document.getElementById("id")
 
+
 /**
  * Cuando se produce el evento submit al pulsar el boton de guardar 
  * se realizan las acciones de comprobacion 
  */
     form.addEventListener("submit", handleFormSubmit)
-
     function handleFormSubmit(e){
         e.preventDefault()
         const inputName = name.value
@@ -93,7 +93,6 @@ document.addEventListener("DOMContentLoaded", function () {
         if(!checkID(formData.id)){
             errors.push("DNI no valido")
         }
-
 
         return errorCollector(errors)
     }
